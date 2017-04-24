@@ -22,17 +22,24 @@
   		<nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
   		<div class="container">
   		<div class="navbar-header">
+  		 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
   			<a class="navbar-brand" href="#featured">Hamburger<span class="subHead">World</span></a>
   		</div><!-- navbar header -->
-  			
-  			<ul class="nav navbar-nav navbar-right">
+  			<div class="collapse navbar-collapse" id="collapse">
+  				<ul class="nav navbar-nav navbar-right">
   				<li><a href="#home">Home</a></li>
   				<li><a href="#about">About</a></li>
   				<li><a href="#menu">Menu</a></li>
   				<li><a href="history.html">History</a></li>
   				<li><a href="variations.html">Variations</a></li>
   				<li><a href="#contact">Contact</a></li>
-  			</ul>	
+  			</ul>		
+  			</div><!-- collapse navbar collapse -->
   			</div><!-- container -->
 	  </nav><!-- navigation -->
   		<div class="carousel">
@@ -153,14 +160,23 @@
   	</div>
   	</div><!-- testimonials -->
   	<footer>
-  		<div>Call us toll-free at <span class="phone">888-555-1212</span></div>
-  		<nav>
-  			<ul>
+  	<div class="container-fluid">
+  	<div class="row">
+  	<div class="col-sm-6">
+  		<p>Call us toll-free at <span class="phone">888-555-1212</span></p>
+  		<p>All contents &copy; 2017 <a href="http://burger.com">burger.com</a> All rights reserved.</p>
+  	</div><!-- cols-sm-6 -->
+  		
+  		<div class="col-sm-6">
+  		<nav class="navbar navbar-default" role="navigation">
+  			<ul class="nav navbar-nav navbar-right">
   				<li><a href="#">Terms of use</a></li>
   				<li><a href="#">Privacy policy</a></li>
   			</ul>
   		</nav>
-  		<p>All contents &copy; 2017 <a href="http://burger.com">burger.com</a> All rights reserved.</p>
+  	</div><!-- col-sm-6 -->
+  		</div><!-- row -->
+  		</div><!-- container -->
   	</footer><!-- footer -->
   	
   	
