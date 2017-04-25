@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,700|Open+Sans+Condensed:300|Roboto|Roboto+Condensed|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,700|Open+Sans+Condensed:300|Roboto|Roboto+Condensed|Roboto+Slab:100');
 body{
 	/*padding-top: 50px;    when you use color navbar add 50px padding-top */
 	font-family: "Roboto Slab", sans-serif;
@@ -11,15 +11,10 @@ h1 , h2 , h3 , h4 , h5 , h6{
 	font-weight: 100;
 	margin:0;
 }
-.page{
-	margin-top:50px;
-	margin-bottom: 50px;
-}
-.navbar{
-	border-radius: 0;
-}
 /* header navigation */
+
 header .navbar{
+	border-radius: 0;
 	padding: 30px 0;
 }
 header .navbar-default{
@@ -46,18 +41,69 @@ header .navbar-default .navbar-nav .active a:hover{
 	color:#E15d5F;
 	background: transparent;
 }
-/* footer navigation*/
+/* Navbar brand */
 
-footer .navbar-default{
-	background: transparent;
-	border:none;
+header .navbar-brand{
+	background: url(../images/hamburger.svg);
+	background-repeat: no-repeat;
+	background-position: 15px 0;
+	height: auto;
+}
+header .navbar-brand h1{
+	color:white;
+	font-size: 1.8em;
+	font-weight: 400;
+	margin: 0;
+	padding-left: 105px;
+	
+	
+}
+header .navbar-brand span.subHead{
+	display: block;
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 0.6em;
+	font-weight: 100;
+	letter-spacing: 5.3px;
 }
 
+/* Navbar toggle */
 
+header .navbar-toggle{
+	background:transparent ;
+}
+header .navbar-default .navbar-toggle .icon-bar{
+	background: white;
+}
+@media only screen and (max-width: 600px){
+header .navbar-collapse{
+	background: rgba(0,0,0,0.50);
+}
+}
+
+/*  Page */
 
 .item img{
 	width:100%;
 }
 .page h2{
 	margin-bottom: 30px;
+}
+.page{
+	margin-top:50px;
+	margin-bottom: 50px;
+}
+/* Page - about */
+#backgroundAbout{
+	background-color: #D86A05;
+	background-image: linear-gradient(to bottom,#D86A05,#D9B7AD);
+	border-top:20px solid #725139;
+}
+
+
+
+/* footer navigation*/
+
+footer .navbar-default{
+	background: transparent;
+	border:none;
 }
