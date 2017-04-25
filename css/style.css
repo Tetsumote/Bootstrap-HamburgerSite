@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Roboto|Roboto+Condensed|Roboto+Slab');
 body{
 	padding-top: 50px;
+	font-family: "Roboto Slab", sans-serif;
+	font-weight: 300;
+	font-size: 2em;
+	position: relative;
 }
 .navbar{
 	border-radius: 0;
