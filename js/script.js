@@ -24,12 +24,32 @@ $('.navbar a[href*=#]:not([href=#])').click(function() {
 var topoffset = 50;		//offset to scrollspy method
 var slideqty = $('#featured .item').length;
 	
+	
+// add fullheight carousel images
+var	wheight = $(window).height();
+
+$('.fullheight').css('height',wheight);
 //Automatically generate carousel indicators
 	
 	for(var i = 0; i < slideqty; i++){
 		var insertText = '<li data-target="#featured" data-slide-to="' + i + '"></li>';
 		$('#featured ol').append(insertText);
 	}
+	
+//replace IMG inside carousels with a background image
+	
+	$('#featured .item img').each(function(){
+		var imgSrc = $(this).attr('src');
+		$(this).parent().css({'background-image':'url('+imgSrc+')'});
+		$(this).remove();
+	});
+	
+//adjust height of .fullheight element on window resize
+	
+	$(window).resize(function(){
+		wheight = $(window).height();
+		$('.fullheight').css('height',wheight);
+	});
 	
 	
 	
