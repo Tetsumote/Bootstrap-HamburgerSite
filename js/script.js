@@ -22,6 +22,18 @@ $('.navbar a[href*=#]:not([href=#])').click(function() {
 	
 	
 var topoffset = 50;		//offset to scrollspy method
+var slideqty = $('#featured .item').length;
+	
+//Automatically generate carousel indicators
+	
+	for(var i = 0; i < slideqty; i++){
+		var insertText = '<li data-target="#featured" data-slide-to="' + i + '"></li>';
+		$('#featured ol').append(insertText);
+	}
+	
+	
+	
+
 //Activate Scroll spy	
 $('body').scrollspy({
 	target: "header .navbar",

@@ -104,6 +104,42 @@ display: none;
 
 
 /* end navbar inbody */
+
+/* Carousel fade */
+
+.carousel.fade{
+	opacity: 1;
+}
+.carousel.fade .item{
+	transition: opacity ease-out .7s;
+	left: 0;
+	top: 0;
+	position: absolute;
+	opacity: 0;
+	width: 100%;
+	display: block;
+}
+.carousel.fade .item:nth-of-type(1){
+	top:auto;
+	opacity: 1;
+	position: relative;
+}
+
+.carousel.fade .item.active{
+	opacity: 1;
+}
+
+.carousel-control{
+	opacity: 0;
+}
+/*To hide the background controls
+.carousel-control.right{
+	background-image: none;
+}
+.carousel-control.left{
+	background-image: none;
+}
+*/
 #services .beef{
 	padding-top: 90px;
 }
