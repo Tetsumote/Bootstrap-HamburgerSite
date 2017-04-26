@@ -1,4 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:100,700|Open+Sans+Condensed:300|Roboto|Roboto+Condensed|Roboto+Slab:100');
+
+.slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
 body{
 	/*padding-top: 50px;    when you use color navbar add 50px padding-top */
 	font-family: "Roboto Slab", sans-serif;
@@ -243,3 +272,5 @@ footer .navbar-default{
 }
 
 
+.page.row .col-sm-3 h2 {
+}

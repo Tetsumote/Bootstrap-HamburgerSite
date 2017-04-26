@@ -1,11 +1,13 @@
 $(function(){
 'use strict';
 
-	
+//carusel timing	
 $('#featured').carousel({
   interval: '5000',
   pause: false
 });		
+
+// smooth scrolling
 $('.navbar a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') === 
       this.pathname.replace(/^\//,'') && 
@@ -21,7 +23,7 @@ $('.navbar a[href*=#]:not([href=#])').click(function() {
     } //click function
   }); //smooth scrolling	
 	
-	
+//variable
 var topoffset = 50;		//offset to scrollspy method
 var slideqty = $('#featured .item').length;
 //creating random number
@@ -33,8 +35,8 @@ var slideqty = $('#featured .item').length;
 var	wheight = $(window).height();
 
 $('.fullheight').css('height',wheight);
-//Automatically generate carousel indicators
 	
+//Automatically generate carousel indicators
 	for(var i = 0; i < slideqty; i++){
 		var insertText = '<li data-target="#featured" data-slide-to="' + i + '"';
 		if(i === randSlide){
@@ -74,7 +76,18 @@ $('body').scrollspy({
 	}else{
 		$('header nav').removeClass('inbody');
 }
+// add animation for element
+    
+ $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
 
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
 
 $('.navbar-fixed-top').on('activate.bs.scrollspy', function () {
   var active = $('body').find('li.active a').attr('href');	
