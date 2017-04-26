@@ -233,32 +233,64 @@ display: none;
 /* Page testimonials */
 
 
-#testimonials blockquote{
+#testimonials .blockquote{
 	position: relative;
 	min-height: 500px;
 }
-#testimonials blockquote .quote{
+#testimonials .blockquote .quote{
 	position: absolute;
-	bottom: 0;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 500px;
+	
+}
+#testimonials .blockquote .more{
+	display: none;
+}
+#testimonials .blockquote .intro{
+	width:100%;
+	height: 100%;
+}
+#testimonials .blockquote .quote:hover .more{
+	display: block;
+	height: 500px;
+	padding-top: 100px;
 	background-color: rgba(255,255,255,0.50);
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: bold;
+	transition: all .5s;
 }
 #testimonials h2{
 	display: none;
 }
 #testimonials #lorraines{
-	background-image: url(../images/AdobeStock_61600915_Preview.jpeg);
+	background-color: #D86A05;
+	background-image: url(../images/testim3.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
 	
 }
 #testimonials #janeh{
-	background-image: url(../images/AdobeStock_61600915_Preview.jpeg);
-	
+	background-color: #FA9232;
+	background-image: url(../images/testim1.svg);
+	background-size: cover;
+	background-position: center center;
 }
 #testimonials #mcphersons{
-	background-image: url(../images/AdobeStock_61600915_Preview.jpeg);
+	background-color: #FA9232;
+	background-image: url(../images/testim2.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	
 	
 }
 #testimonials #johnb{
-	background-image: url(../images/AdobeStock_61600915_Preview.jpeg);
+	background-color: #D86A05;
+	background-image: url(../images/testim4.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
 	
 }
 
@@ -272,5 +304,3 @@ footer .navbar-default{
 }
 
 
-.page.row .col-sm-3 h2 {
-}
