@@ -201,7 +201,61 @@ header .inbody .navbar-brand  #subHead{
 	background-image: none;
 	opacity: 1;
 }
-
+.menuCard{
+	border-top:1px solid green;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background:  #34A853;
+}
+.nav-tabs{
+	border:none !important;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	background: green;
+	color:white;
+	}
+	.nav-tabs > li > a{
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	border:none !important;
+		}
+	.table td{
+    border-top: green solid 1px !important;
+		
+	}
+	.nav-tabs > li > a:hover{
+		background: green;
+		color:lightgreen;
+	} 
+	.nav > li > a {
+	position: relative;
+	display: block;
+	color:white;
+	font-family: paytone-one;
+	font-style: normal;
+	font-weight: 400;
+	}
+		.table1{
+    border-top: green solid 1px !important;
+		font-size:28px;
+		font-family: aguafina-script;
+		color: white;
+			padding: 15px;
+	}
+	.table2{
+    border-top: green solid 1px !important;
+		font-size:17px;
+		color:green;
+		padding: 15px;
+	}
+	.table3{
+    border-top: green solid 1px !important;
+		font-size:24px;
+		font-weight: 400;
+		color:white;
+		padding: 15px;
+	}
 #featured .item{
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -350,6 +404,12 @@ footer .nav.navbar-nav.navbar-right{
 
 
 @media screen and (max-width:599px){
+
+	
+footer .nav.navbar-nav.navbar-right  li  a{
+	float: left;
+}	
+		
 }
 
 @media screen and (min-width:600px) and (max-width:991px){
