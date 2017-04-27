@@ -84,6 +84,9 @@ header .navbar-default .navbar-nav .active a:hover{
 	color:#E15d5F;
 	background: transparent;
 }
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	background: transparent !important; 
+}
 /* Navbar brand */
 
 header .navbar-brand{
@@ -201,17 +204,19 @@ header .inbody .navbar-brand  #subHead{
 	background-image: none;
 	opacity: 1;
 }
+/* menu cards */
 .menuCard{
-	border-top:1px solid green;
+	border-top:1px solid #5C2301;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background:  #34A853;
+	background: #656673;
+	background-image: linear-gradient(to left,orange,#D86A05);
 }
 .nav-tabs{
 	border:none !important;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
-	background: green;
+	background: orange;
 	color:white;
 	}
 	.nav-tabs > li > a{
@@ -221,12 +226,12 @@ header .inbody .navbar-brand  #subHead{
 	border:none !important;
 		}
 	.table td{
-    border-top: green solid 1px !important;
+    border-top: #5C2301 solid 1px !important;
 		
 	}
 	.nav-tabs > li > a:hover{
-		background: green;
-		color:lightgreen;
+		background: #853201;
+		color:#FFBFA2;
 	} 
 	.nav > li > a {
 	position: relative;
@@ -236,25 +241,27 @@ header .inbody .navbar-brand  #subHead{
 	font-style: normal;
 	font-weight: 400;
 	}
-		.table1{
-    border-top: green solid 1px !important;
+	.table1{
+    border-top: orange solid 1px !important;
 		font-size:28px;
-		font-family: aguafina-script;
+		font-family: ewert;
 		color: white;
-			padding: 15px;
-	}
-	.table2{
-    border-top: green solid 1px !important;
-		font-size:17px;
-		color:green;
 		padding: 15px;
 	}
+	.table2{
+    	border-top: orange solid 1px !important;
+		font-size:19px;
+		color:#AF4201;
+		padding: 15px;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	}
 	.table3{
-    border-top: green solid 1px !important;
+    border-top: orange solid 1px !important;
 		font-size:24px;
 		font-weight: 400;
 		color:white;
 		padding: 15px;
+		font-family: ewert;
 	}
 #featured .item{
 	background-size: cover;
@@ -276,7 +283,8 @@ header .inbody .navbar-brand  #subHead{
 
 }
 #about{
-	padding-top: 50px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
 #services .bread{
@@ -383,14 +391,15 @@ footer .navbar-default{
 }
 footer{
 	background-color: black;
+	border-top:1px solid orange;
 }
 footer .nav.navbar-nav.navbar-right li a {
 	padding-left: 6px;
 	padding-right: 6px;
 }
 .row .col-sm-6 .footerCopy {
-	padding-top: 20px;
-	font-family: smokum;
+	padding-top: 18px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	font-style: normal;
 	font-weight: 400;
 	letter-spacing: 5px;
@@ -404,7 +413,16 @@ footer .nav.navbar-nav.navbar-right{
 
 
 @media screen and (max-width:599px){
-
+.nav.navbar-nav   {
+	background-color: rgba(0,0,0,0.70);
+	margin-top: 0;
+	padding-bottom: 20px;
+	margin-bottom: 0;
+}
+.nav.navbar-nav li a {
+	display: block;
+	text-align: center;
+}
 	
 footer .nav.navbar-nav.navbar-right  li  a{
 	float: left;
@@ -413,6 +431,11 @@ footer .nav.navbar-nav.navbar-right  li  a{
 }
 
 @media screen and (min-width:600px) and (max-width:991px){
+	
+header .navbar.inbody .navbar-nav{
+	padding-top: 0;
+}
+	
 }
 
 @media screen and (min-width:992px) and (max-width:1199px){
