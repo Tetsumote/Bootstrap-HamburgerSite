@@ -327,6 +327,25 @@ footer .navbar-default{
 	background: transparent;
 	border:none;
 }
+footer{
+	background-color: black;
+}
+footer .nav.navbar-nav.navbar-right li a {
+	padding-left: 6px;
+	padding-right: 6px;
+}
+.row .col-sm-6 .footerCopy {
+	padding-top: 20px;
+	font-family: smokum;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 5px;
+}
+
+footer .nav.navbar-nav.navbar-right{
+	margin-right: 30px;
+}
+
 
 
 
